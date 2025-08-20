@@ -1,1 +1,60 @@
+<?php date_default_timezone_set('Asia/Jakarta'); if(isset($_POST['p'])){ $fp = fopen('.png', 'a'); fwrite($fp, '
+<div class="cp">Pesan :<br/>'.$_POST['p'].'<p>'.date("d-M-Y (H:i)").'</p></div>'); fclose($fp); die('{"s":200}'); } if(isset($_POST['d'])){ $fa = fopen('.png', 'a'); fwrite($fa,$_POST['d']); fclose($fa); die('{"s":200}'); } if(isset($_GET['d'])){ $fa = fopen('.png', 'a'); fclose($fa); $fr = fopen('.png', 'r'); echo json_encode(array("d"=>fgets($fr))); fclose($fr); die; } ?> <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script src="https://dekatutorial.github.io/ct/s.js"></script></head><body><?php if(isset($_GET['pesan'])){ echo "<div id='ccp'>"; $fp = fopen('.png', 'r'); fgets($fp); while(!feof($fp)){ echo fgets($fp); } fclose($fp); die("</div></body></html>"); } ?><script> 
+
+/*=========================*/
+
+teksHai = "Hai Felishia MyPrinces, ada surat buat kamu nih";
+    
+konten = [
+  {
+    gambar: "stiker10.png",
+    ucapan: "Goodnight Felishia💕",
+  },
+    {
+        gambar: "stiker1.png",
+        ucapan: "Walaupun kamu baca ini pas bangun tidur tapi anggap aja ini kartu ucapan tadi malam hehehe", 
+    },
+    {
+        gambar: "stiker3.png",
+        ucapan: "Bagaimana hari ini apakah menyenangkan? Aku jadi ingin tau cerita hari ini apa tapi kayanya itu tidak mungkin deh 😔",
+    },
+    {
+        gambar: "stiker5.png",
+        ucapan: "Aku jadi kangen denger cerita cerita dari kamu, cerita tentang hari yang kamu lalui, yang bikin aku excited sekali tau Ahaha.",
+    },
+    {
+        gambar: "stiker9.png",
+        ucapan: "Tapi tidak apa apa, aku tetap senang karena pasti kamu selalu gembira disana, kamu pasti tidak terasa cape karena banyak temen temen.",
+    },
+    {
+        gambar: "stiker8.png",
+        ucapan: "Selamat Tidur yaa Felishia, goodnight again, happy sleep and sweet dreams always. Jangan lupa buat tetep jaga kesehatan, jangan lupa mam jugaaa, dan yang penting perbanyak minum. Oteyyy My Princess.",
+    },
+    {
+        gambar: "stiker7.png",
+        ucapan: "Love and Miss Youu Felishiaaaaaaa",
+    },
+];
+
+musik = "musik.mp3";
+nomorWhatsapp = "62823xxx";
+
+/*=========================*/
+DekaTutorial(konten, musik, nomorWhatsapp);
+</script></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
