@@ -1,1 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="./assets/get_image.php?file=popup-style-css" />
+    <title>Special For You</title>
+</head>
+
+<body>
+    <main>
+        <div class="container" style="background-image: url('https://dari-deka.github.io/assets/popup-bg.jpg')">
+            <p>Alooo Felishiaaa</p>
+            <img src="https://dari-deka.github.io/assets/Stiker%203.gif"
+                class="stkr" />
+            <button class="btn btn-start">Klik Disini</button>
+        </div>
+
+        
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+<style>
+.container-ads {
+    background: rgb(255, 227, 255);
+    /* background: #fff; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 20px; */
+}
+
+.header {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header h3 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    /* background: blue; */
+}
+
+.icon i {
+    color: white;
+    height: 7px;
+    line-height: 7px;
+    font-size: 2rem;
+    animation: anm-scroll-i 2s ease infinite;
+}
+
+.icon i:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.icon i:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes anm-scroll-i {
+
+    0%,
+    60%,
+    100% {
+        opacity: 1;
+    }
+
+    70%,
+    80% {
+        opacity: 0;
+    }
+}
+
+.video {
+    width: 100%;
+    height: 100%
+        /* padding: 20px 0; */
+}
+
+.order {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.video h2,
+.order h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #3c3c3c;
+}
+
+.video h2 {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.order p {
+    font-weight: 600;
+    color: #3c3c3c;
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    letter-spacing: 0;
+    margin-top: 12px;
+}
+
+.order p::after {
+    display: none !important;
+}
+
+/* .video .video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: auto;
+    width: 100%;
+    height: 40vh;
+    overflow: auto;
+    margin-top: 12px;
+    scroll-snap-type: y mandatory;
+    padding: 0 20px;
+} */
+
+.video .video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    padding: 0 20px;
+    margin-top: 20px;
+    gap: 12px;
+    max-height: calc(100% - 100px);
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+/* .video .video-container .video-item {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    width: 45vw;
+    max-width: 250px;
+    padding: 8px;
+    background: #f4eafe;
+    border-radius: 0.5em;
+    scroll-snap-align: start;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+} */
+
+.video .video-container .video-item {
+    text-decoration: none;
+    padding: 12px;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+}
+
+/* .video .video-container img {
+    width: 40vw;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 5px;
+} */
+
+.video .video-container img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.video-title {
+    color: #3c3c3c;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.order .btn {
+
+    font-size: 1.1rem;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #6e86f8;
+    border: 3px solid white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 20px #19224e7f;
+    margin-top: 20px;
+
+
+    font-size: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 12px;
+    width: 100%;
+}
+
+.order .btn span {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+</style>
+<div class="container-ads">
+    <div class="header">
+        <div class="icon">
+            <i class="bx bx-chevron-down"></i>
+            <i class="bx bx-chevron-down"></i>
+            <i class="bx bx-chevron-down"></i>
+        </div>
+        <h3>Cara Bikin Web Ucapan Online</h3>
+        <div class="icon">
+            <i class="bx bx-chevron-down"></i>
+            <i class="bx bx-chevron-down"></i>
+            <i class="bx bx-chevron-down"></i>
+        </div>
+    </div>
+
+    <!-- <div class="order">
+        <h2>Order Website Ucapan</h2>
+        <p>Menerima jasa pembuatan website ucapan custom. Bebas request desain, ucapan, foto, musik, dan tanpa watermark
+        </p>
+        <button class="btn">Order Sekarang</button>
+    </div> -->
+
+    <div class="video">
+        <h2>Video Tutorial</h2>
+        <div class="video-container">
+            
+            <a class="video-item" href="https://youtu.be/CMQxJgGnkRY">
+                <img src="https://i.ytimg.com/vi/CMQxJgGnkRY/sddefault.jpg" />
+                <div class="video-title">Cara Membuat Ucapan Bucin Online Bunga - Viral Tiktok</div>
+            </a>
+
+            
+            <a class="video-item" href="https://youtu.be/O0-_spL13Mk">
+                <img src="https://i.ytimg.com/vi/O0-_spL13Mk/sddefault.jpg" />
+                <div class="video-title">Cara Membuat Script HTML Bucin | Ucapan Valentine Online Lewat Link</div>
+            </a>
+
+            
+            <a class="video-item" href="https://youtu.be/f42jnPhwuLw">
+                <img src="https://i.ytimg.com/vi/f42jnPhwuLw/sddefault.jpg" />
+                <div class="video-title">Cara Membuat Ucapan Bucin Online Lewat Link | Script HTML Replit</div>
+            </a>
+
+            
+            <a class="video-item" href="https://youtu.be/E-OHL9_AIn8">
+                <img src="https://i.ytimg.com/vi/E-OHL9_AIn8/sddefault.jpg" />
+                <div class="video-title">Cara Membuat Ucapan Ulang Tahun Lewat Link | Script HTML Replit</div>
+            </a>
+
+                    </div>
+    </div>
+</div>    </main>
+    <script>
+    async function start() {
+        
+        await swalo.fire({
+            title: `Good Afternoonnn👋👋👋`,
+            imageUrl: `https://dari-deka.github.io/assets/Stiker%2029.gif`
+        });
+
+        
+        await swalo.fire({
+            title: `Sedang istirahat pasti ini hehehe, Bagaimana tadii pagiii apakahh seruuu? aaa masii ingin denger ceritanyaaa 😔 Semogaaa selalu senangg yawww. Tudeyyy engga adaa snap kah 😣`,
+            imageUrl: `https://dari-deka.github.io/assets/Stiker%201.gif`
+        });
+
+        
+        await swalo.fire({
+            title: `Walaupun chatt nyaa engga dibukaa tapi akuu senangggg kamuu bisaa bajaa setiap greeting darikuu hehhe semogaaa kamuuu sukaaaaaa my princes. `,
+            imageUrl: `https://dari-deka.github.io/assets/Stiker%2024.gif`
+        });
+
+        
+        await swalo.fire({
+            title: `Selamat melanjutkan istirahat buatt recharge energi buat nanti soreee, btw udahh mamm belummm. i hopee sudahh yaaa😇.`,
+            imageUrl: `https://dari-deka.github.io/assets/Stiker%2015.gif`
+        });
+
+        
+        await swalo.fire({
+            title: `Miss youuuu Felishiaaaaa 🙌🙌🫶`,
+            imageUrl: `https://dari-deka.github.io/assets/Stiker%2012.gif`
+        });
+
+            }
+
+
+    var swalo = Swal.mixin({
+        allowOutsideClick: false,
+        confirmButtonText: "Next"
+    });
+
+    document.querySelector(".btn-start").onclick = start;
+
+    let isScroll = 0;
+    let mainC = document.querySelector("main");
+    console.log(mainC);
+
+    mainC.addEventListener("scroll", function() {
+        console.log(mainC.scrollTop);
+        if (mainC.scrollTop > 70) {
+            if (!isScroll) {
+                console.log(mainC.scrollTop);
+                mainC.scrollTop = mainC.scrollHeight;
+                isScroll = 1;
+            }
+        } else {
+            if (isScroll) {
+                isScroll = 0;
+            }
+        }
+    });
+    </script>
+</body>
+
+</html>
